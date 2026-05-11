@@ -1,62 +1,66 @@
-/**
- * Representa un Pokenea, una criatura urbana con características únicas.
- */
 class Pokenea {
+  id;
+  name;
+  height;
+  ability;
+  image;
+  phrase;
+
   constructor({ id, name, height, ability, image, phrase }) {
-    this._id = id;
-    this._name = name;
-    this._height = height;
-    this._ability = ability;
-    this._image = image;
-    this._phrase = phrase;
+    this.id = id;
+    this.name = name;
+    this.height = height;
+    this.ability = ability;
+    this.image = image;
+    this.phrase = phrase;
   }
 
   getId() {
-    return this._id;
+    return this.id;
   }
 
   getName() {
-    return this._name;
+    return this.name;
   }
 
   getHeight() {
-    return this._height;
+    return this.height;
   }
 
   getAbility() {
-    return this._ability;
+    return this.ability;
   }
 
   getImage() {
-    return this._image;
+    return this.image;
   }
 
   getPhrase() {
-    return this._phrase;
+    return this.phrase;
   }
 
   setId(newId) {
-    this._id = newId;
+    this.id = newId;
   }
 
   setName(newName) {
-    this._name = newName;
+    this.name = newName;
   }
 
   setHeight(newHeight) {
-    this._height = newHeight;
+    this.height = newHeight;
   }
 
   setAbility(newAbility) {
-    this._ability = newAbility;
+    this.ability = newAbility;
   }
 
   setImage(newImage) {
-    this._image = newImage;
+    this.image = newImage;
   }
 
   setPhrase(newPhrase) {
-    this._phrase = newPhrase;
+    this.phrase = newPhrase;
   }
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "pokeneas",
   "version": "1.0.0",
-  "description": "API REST de Pokeneas - Pokédex de Antioquia",
+  "description": "Pokeneas REST API - Antioquia Pokedex",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

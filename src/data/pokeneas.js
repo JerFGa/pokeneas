@@ -1,68 +1,60 @@
 const pokeneas = [
   {
     id: 0,
-    name: 'Charizard (El Veterano de la 35)',
+    name: 'Charizard (The Veteran of 35)',
     height: '1.70m',
-    ability: 'Centinela del Sardinel: Puede quedarse inmóvil por horas en la misma esquina. Su presencia intimida tanto que el tráfico fluye más lento cuando él está mirando.',
+    ability: 'Sardinel Sentinel: Can remain motionless for hours on the same corner. His presence intimidates so much that traffic flows slower when he is watching.',
     image: 'https://storage.googleapis.com/poke_neas/Charizard.jpeg',
-    phrase: 'La calle no es de quien más corre, sino de quien más aguanta sentado en la misma esquina.'
+    phrase: 'The street does not belong to those who run the most, but to those who endure sitting on the same corner the longest.'
   },
   {
     id: 1,
-    name: 'Gardevoir diva',
+    name: 'Gardevoir Diva',
     height: '1.60m',
-    ability: 'Elegancia Camaleónica: Puede pasar por el barrio más pesado luciendo como si estuviera en una pasarela, haciendo que el peligro se detenga solo para verla pasar.',
+    ability: 'Chameleon Elegance: Can walk through the toughest neighborhood looking like she is on a runway, making danger stop just to watch her pass.',
     image: 'https://storage.googleapis.com/poke_neas/Gardevoir.jpeg',
-    phrase: 'En este barrio yo no sigo reglas, yo soy la que decide qué color de ladrillo se ve bien con mis uñas.'
+    phrase: 'In this neighborhood I do not follow rules, I am the one who decides which brick color looks good with my nails.'
   },
   {
     id: 2,
-    name: 'Gengar "El Zarrapastroso" Espectral',
+    name: 'Gengar "The Scruffy" Spectral',
     height: '1.50m',
-    ability: 'Ojos de Semáforo en Rojo: Sus gafas de ciclista no son por moda, son por necesidad. Sus ojos brillan con una intensidad carmesí que puede hipnotizar al barman para que nunca se acabe la cuenta o confundir a los enemigos haciéndoles creer que viene una patrulla con las luces prendidas.',
+    ability: 'Red Traffic Light Eyes: His cyclist glasses are not for fashion, they are a necessity. His eyes glow with a crimson intensity that can hypnotize the bartender so the tab never ends, or confuse enemies making them believe a patrol with lights on is coming.',
     image: 'https://storage.googleapis.com/poke_neas/Gengar.jpeg',
-    phrase: 'La noche no se hizo para dormir, sino para ver quién aguanta más antes de que el sol nos vuelva sombras de nuevo.'
+    phrase: 'The night was not made for sleeping, but to see who lasts the longest before the sun turns us into shadows again.'
   },
   {
     id: 3,
     name: 'Garrachu',
     height: '0.50m',
-    ability: 'Graffiti Relámpago: Puede rayar una pared entera con su cola en menos de un segundo, dejando su marca antes de que la policía doble la esquina.',
+    ability: 'Lightning Graffiti: Can tag an entire wall with his tail in less than a second, leaving his mark before the police round the corner.',
     image: 'https://storage.googleapis.com/poke_neas/garrachu.jpeg',
-    phrase: 'Pequeño de tamaño, pero grande en el visaje; el que es avispa, no necesita ser avispa.'
+    phrase: 'Small in size, but big in swagger; whoever is sharp does not need to be a wasp.'
   },
   {
     id: 4,
-    name: 'Mewtwo Poderoso',
+    name: 'Mewtwo Powerful',
     height: '2.00m',
-    ability: 'Telepatía de Comuna: Sabe exactamente quién sube y quién baja por las escalas antes de que pisen el primer escalón. Controla la "vuelta" sin mover un dedo.',
+    ability: 'Commune Telepathy: Knows exactly who goes up and who goes down the stairs before they step on the first rung. Controls the "turn" without moving a finger.',
     image: 'https://storage.googleapis.com/poke_neas/Mewtwo.jpeg',
-    phrase: 'El verdadero poder no es hacer ruido, es ser el silencio que todos respetan cuando el Rojo manda.'
+    phrase: 'True power is not making noise, it is being the silence that everyone respects when the Red commands.'
   },
   {
     id: 5,
-    name: 'Lucario Verdolaga',
+    name: 'Lucario Greener',
     height: '1.20m',
-    ability: 'Rastreo de Mística: Puede oler el miedo de la hinchada rival a kilómetros. Sus púas brillan en verde esmeralda cuando detecta que es hora de defender el templo.',
+    ability: 'Mystic Tracking: Can smell the rival crowd fear from kilometers away. His spikes glow emerald green when it is time to defend the temple.',
     image: 'https://storage.googleapis.com/poke_neas/lucario.jpeg',
-    phrase: 'Rastreo de Mística: Puede oler el miedo de la hinchada rival a kilómetros. Sus púas brillan en verde esmeralda cuando detecta que es hora de defender el templo.'
+    phrase: 'Mystic Tracking: Can smell the rival crowd fear from kilometers away. His spikes glow emerald green when it is time to defend the temple.'
   },
   {
     id: 6,
-    name: 'Sceptile Aleto',
+    name: 'Sceptile Winged',
     height: '2.00m',
-    ability: 'Reflejo de Cristal: Sus gafas tornasol devuelven cualquier mala energía o "visaje" multiplicado por diez, dejando ciego al que lo mire con envidia.',
+    ability: 'Crystal Reflection: His iridescent glasses return any bad energy or "swagger" multiplied by ten, blinding whoever looks at him with envy.',
     image: 'https://storage.googleapis.com/poke_neas/sceptile.jpeg',
-    phrase: 'Si el mundo es un zapateo, yo soy el que marca el paso mientras los demás solo intentan no caerse.'
+    phrase: 'If the world is a dance-off, I am the one who sets the pace while the others just try not to fall.'
   }
 ];
 
-function getAll() {
-  return pokeneas;
-}
-
-function getRandom() {
-  return pokeneas[Math.floor(Math.random() * pokeneas.length)];
-}
-
-module.exports = { pokeneas, getAll, getRandom };
+module.exports = { pokeneas };

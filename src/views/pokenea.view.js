@@ -1,7 +1,7 @@
 function renderPokenea(pokenea, containerId) {
   return `
     <!DOCTYPE html>
-    <html lang="es">
+    <html lang="en">
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +64,7 @@ function renderPokenea(pokenea, containerId) {
           <img src="${pokenea.getImage()}" alt="${pokenea.getName()}" />
           <p class="phrase">"${pokenea.getPhrase()}"</p>
           <div class="container-id">
-            Contenedor ID: <strong>${containerId}</strong>
+            Container ID: <strong>${containerId}</strong>
           </div>
         </div>
       </body>
