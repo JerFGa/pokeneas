@@ -1,4 +1,3 @@
-const view = require('../views/pokenea.view');
 const service = require('../services/pokenea.service');
 
 function getPokeneaJson(req, res) {
@@ -17,9 +16,13 @@ function getPokeneaJson(req, res) {
 
 function getPokeneaHtml(req, res) {
   const pokenea = service.getRandom();
-  const html = view.renderPokenea(pokenea, process.env.HOSTNAME);
 
-  res.send(html);
+  res.render('pokenea', {
+    name: pokenea.getName(),
+    image: pokenea.getImage(),
+    phrase: pokenea.getPhrase(),
+    containerId: process.env.HOSTNAME
+  });
 }
 
 module.exports = { getPokeneaJson, getPokeneaHtml };
